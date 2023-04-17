@@ -26,6 +26,25 @@ function generatePassword() {
   const upperCon = confirm("Would you like to include uppercase letters?");
   const numCon = confirm("would you like to include numbers?");
 
+
+  while (password.length < pwLength) {
+    if (spCharCon && password.length < pwLength) {
+      password.push(spCharacters[Math.floor(Math.random() * spCharacters.length)])
+    };
+    if (lowerCon && password.length < pwLength) {
+      password.push(letters[Math.floor(Math.random() * letters.length)])
+    };
+    if (upperCon && password.length < pwLength) {
+      password.push(upperLetters[Math.floor(Math.random() * upperLetters.length)])
+    };
+    if (numCon && password.length < pwLength) {
+      password.push(numbers[Math.floor(Math.random() * numbers.length)])
+    }
+
+  }
+
+  console.log(password);
+
 }
 
 // Write password to the #password input
