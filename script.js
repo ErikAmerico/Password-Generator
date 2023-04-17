@@ -26,12 +26,6 @@ function generatePassword() {
   const upperCon = confirm("Would you like to include uppercase letters?");
   const numCon = confirm("would you like to include numbers?");
 
-  console.log(pwLength)
-  console.log(spCharCon)
-  console.log(lowerCon)
-  console.log(upperCon)
-  console.log(numCon)
-
 }
 
 // Write password to the #password input
