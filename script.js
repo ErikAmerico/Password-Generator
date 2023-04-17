@@ -5,9 +5,10 @@ function generatePassword() {
 
   const pwLength = prompt("Choose password length between 8-128 characters.");
 
-
   if (pwLength < 8 || pwLength > 128) {
     alert("error, your password must be at least 8 and no more than 128 characters")
+    generatePassword();
+    return;
   };
 
   const spCharacters = ["+", "-", "&", "|", "!", "^",
@@ -23,6 +24,12 @@ function generatePassword() {
   const lowerCon = confirm("would you like to include lowercase letters?");
   const upperCon = confirm("Would you like to include uppercase letters?");
   const numCon = confirm("would you like to include numbers?");
+
+  console.log(pwLength)
+  console.log(spCharCon)
+  console.log(lowerCon)
+  console.log(upperCon)
+  console.log(numCon)
 
 }
 
