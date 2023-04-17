@@ -2,13 +2,14 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
+  let password = [];
 
   const pwLength = prompt("Choose password length between 8-128 characters.");
 
   if (pwLength < 8 || pwLength > 128) {
     alert("error, your password must be at least 8 and no more than 128 characters")
     generatePassword();
-    return;
+    return
   };
 
   const spCharacters = ["+", "-", "&", "|", "!", "^",
