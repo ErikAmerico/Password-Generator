@@ -5,6 +5,10 @@ function generatePassword() {
 
   const pwLength = prompt("Choose password length between 8-128 characters.");
 
+
+  if (pwLength < 8 || pwLength > 128) {
+    alert("error, your password must be at least 8 and no more than 128 characters")
+  };
 }
 
 // Write password to the #password input
