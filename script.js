@@ -1,6 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function generatePassword() {
+
+  const pwLength = prompt("Choose password length between 8-128 characters.");
+
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
