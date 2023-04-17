@@ -43,7 +43,8 @@ function generatePassword() {
 
   }
 
-  return (password);
+  let clearPassword = password.join("");
+  return (clearPassword);
 
 }
 
