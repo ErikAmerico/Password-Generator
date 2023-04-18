@@ -43,6 +43,13 @@ function generatePassword() {
 
   }
 
+  function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+    return array;
+  }
+
+  shuffle(password);
+
   let clearPassword = password.join("");
   return (clearPassword);
 
