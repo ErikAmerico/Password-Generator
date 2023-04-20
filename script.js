@@ -11,12 +11,13 @@ function generatePassword() {
   const pwLength = prompt("Choose password length between 8-128 characters.");
 
   //checks to make sure user input meets our requirements.
-  //if it does not, the function restarts
-  if (pwLength < 8 || pwLength > 128) {
+  if (isNaN(pwLength)) {
+    alert("Yikes! We were looking for just a number here. Try again.")
+    return ("Click Generate Password button below to try again. Numbers only this time!");
+  } else if (pwLength < 8 || pwLength > 128) {
     alert("Oops! Your password must be at least 8, and a maximum of 128 characters. Try Again.")
-    generatePassword();
-    return
-  };
+    return ("So close! Remember, the length of your password has to be from 8 characters to 128 characters. Click below to try again.");
+  }
 
   //defining criteria options for user
   const spCharacters = ["+", "-", "&", "|", "!", "^",
@@ -55,7 +56,6 @@ function generatePassword() {
 
   }
 
-
   function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
     return array;
@@ -74,8 +74,6 @@ function generatePassword() {
   let clearPassword = password.join("");
   return (clearPassword);
 }
-
-
 
 // Write password to the #password input
 function writePassword() {
