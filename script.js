@@ -13,7 +13,7 @@ function generatePassword() {
   //checks to make sure user input meets our requirements.
   //if it does not, the function restarts
   if (pwLength < 8 || pwLength > 128) {
-    alert("error, your password must be at least 8 and no more than 128 characters")
+    alert("Oops! Your password must be at least 8, and a maximum of 128 characters. Try Again.")
     generatePassword();
     return
   };
@@ -64,7 +64,7 @@ function generatePassword() {
   //↑this↑ function when called ↓below↓, shuffles the password array.
   //without this function, the password would always repeat as
   // spCharacters - letters - upperLetters - numbers
-  // The arrow function and - 0.5 I do not 100% fully understand yet. (credit to google)
+  // The arrow function and - 0.5 I do not 100% fully understand yet. (credit to stackoverflow.com)
   //but it is neccessary for the final product!
 
   shuffle(password);
