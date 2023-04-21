@@ -4,7 +4,7 @@ Welcome! This is a Password Generator site meant to produce a unique and secure 
 
 ## About this page
 Here is an example screen shot of the webpage:
-
+![Alt text](Assets/03-javascript-homework-demo.png)
 
 
 ### Technologies used
@@ -16,4 +16,4 @@ Here is an example screen shot of the webpage:
 - StackOverflow (noted in comments)
 
 #### Link to Portfolio website:
-- https://erikamerico.github.io/Portfolio/
+- https://erikamerico.github.io/Password-Generator/
